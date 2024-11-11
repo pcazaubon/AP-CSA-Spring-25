@@ -1,6 +1,0 @@
-theme: minima
-title: "Java Coding Labs"
-description: "Interactive labs and challenges for learning Java."
-markdown: kramdown
-kramdown:
-  input: GFM
