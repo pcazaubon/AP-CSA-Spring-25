@@ -5,11 +5,13 @@ const runCode = async () => {
     outputElement.textContent = "Running...";
 
     try {
-        const response = await fetch('https://your-glitch-project-name.glitch.me/run', {
+        // Replace 'https://your-project-name.glitch.me' with your Glitch project URL
+        const response = await fetch('https://your-project-name.glitch.me/run', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ code })
         });
+        
         const result = await response.json();
         outputElement.textContent = result.output;
     } catch (error) {
