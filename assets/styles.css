@@ -7,31 +7,36 @@
   --sidebar-text: #f1fa8c;
 }
 
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Basic Body Styling */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  margin: 0;
+  display: flex; /* Flex layout to manage sidebar and content */
 }
 
 /* Sidebar Styling */
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 200px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--sidebar-background);
   color: var(--sidebar-text);
   padding: 20px;
-  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .sidebar h2 {
   font-size: 1.2em;
-  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 .sidebar a {
@@ -48,7 +53,7 @@ body {
 
 /* Main Content Styling */
 .content {
-  margin-left: 220px; /* Adds space to the left for the sidebar */
+  margin-left: 220px; /* Ensures content starts after the sidebar */
   padding: 20px;
   max-width: 800px;
 }
