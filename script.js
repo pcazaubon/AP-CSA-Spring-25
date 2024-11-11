@@ -6,7 +6,7 @@ const runCode = async () => {
 
     try {
         // Replace 'https://your-project-name.glitch.me' with your Glitch project URL
-        const response = await fetch('https://your-project-name.glitch.me/run', {
+        const response = await fetch('https://hail-amplified-bath.glitch.me', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ code })
