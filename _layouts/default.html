@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/lab1' | relative_url }}">Lab 1: Loops</a>
+    <a href="{{ '/lab2' | relative_url }}">Lab 2: Arrays</a>
+    <a href="{{ '/quiz' | relative_url }}">Quiz</a>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+</html>
