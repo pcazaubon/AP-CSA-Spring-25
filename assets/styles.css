@@ -1,0 +1,42 @@
+/* Retro Colors */
+:root {
+  --background-color: #282a36;
+  --text-color: #f8f8f2;
+  --link-color: #ff79c6;
+  --sidebar-background: #44475a;
+  --sidebar-text: #f1fa8c;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 200px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--sidebar-background);
+  color: var(--sidebar-text);
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--sidebar-text);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #50fa7b;
+}
