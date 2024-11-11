@@ -7,27 +7,31 @@
   --sidebar-text: #f1fa8c;
 }
 
+/* Basic Body Styling */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Courier New', Courier, monospace;
-  padding-left: 200px;
-}
-
-a {
-  color: var(--link-color);
+  display: flex;
+  margin: 0;
 }
 
 /* Sidebar Styling */
 .sidebar {
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 200px;
-  height: 100%;
+  height: 100vh;
   background-color: var(--sidebar-background);
   color: var(--sidebar-text);
   padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-top: 0;
 }
 
 .sidebar a {
@@ -35,8 +39,20 @@ a {
   margin-bottom: 10px;
   color: var(--sidebar-text);
   text-decoration: none;
+  font-size: 1em;
 }
 
 .sidebar a:hover {
   color: #50fa7b;
+}
+
+/* Main Content Styling */
+.content {
+  margin-left: 220px; /* Adds space to the left for the sidebar */
+  padding: 20px;
+  max-width: 800px;
+}
+
+a {
+  color: var(--link-color);
 }
